@@ -2,9 +2,9 @@
 /**
  * main - a function that prints the largest prime factor of a number
  *
- * Retur: 0 if success
+ * Return: 0 if success
  */
-in  main(void)
+int main(void)
 {
 	int prime;
 	int i;
