@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	int prime;
-	int i;
-	int n;
+	long int prime;
+	long int i;
+	long int n;
 	n = 612852475143;
 
 	for(i = 1; i < n; i++)
@@ -16,6 +16,6 @@ int main(void)
 		if (prime % i == 0)
 			prime = i;
 	}
-	pritnf("%d", prime);
+	printf("%ld", prime);
 	return (0);
 }
