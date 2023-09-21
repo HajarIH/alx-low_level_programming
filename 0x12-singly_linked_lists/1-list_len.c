@@ -9,15 +9,15 @@
 
 size_t list_len(const list_t *h)
 {
-	int L = 0;
+	size_t L = 0;
 
 	if (h->next == NULL)
 		return (0);
 	else
 		while (!h->next)
 		{
-			h = h->next;
 			L++;
+			h = h->next;
 		}
 	return (L);
 }
