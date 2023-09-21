@@ -10,7 +10,7 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t tail;
+	list_t *tail;
 	list_t *current = NULL;
 	int L = 0;
 
@@ -24,12 +24,12 @@ list_t *add_node_end(list_t **head, const char *str)
 	tail->str = strdup(str);
 	tail->len = L;
 	tail->next = NULL;
-	if (*head == NULL)
+	if (head == NULL)
 	{
-		*head = new;
-		return (new);
+		*head = tail;
+		return (tail);
 	}
-	current = head->next;
+	current = *head;
 	while (current->next)
 	{
 		current = current->next;
