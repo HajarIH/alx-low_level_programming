@@ -2,9 +2,8 @@
 
 /**
  * print_listint: a function that prints a list
- * @*h : a pointer to a list
- *
- * Return : the number of nodes
+ * @h: a pointer to a list
+ * Return: the number of nodes
  */
 
 size_t print_listint(const listint_t *h)
@@ -16,7 +15,7 @@ size_t print_listint(const listint_t *h)
 		return (a);
 	a = a + 1;
 	printf("%d\n", h->n);
-	while( current != NULL)
+	while (current != NULL)
 	{
 		printf("%d\n", current->n);
 		a = a + 1;
