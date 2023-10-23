@@ -12,7 +12,7 @@ size_t print_listint(const listint_t *h)
 	size_t a = 0;
 	struct listint_s *current = h->next;
 
-	if (h = NULL)
+	if (h == NULL)
 		return (a);
 	a = a + 1;
 	printf("%d", h->n);
