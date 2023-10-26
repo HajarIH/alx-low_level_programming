@@ -1,6 +1,25 @@
 #include "main.h"
 
 /**
+ * _pow: a function that calculate the power of a number
+ * @base: the base
+ * @exponent: the exponent
+ * Return: the power of a number
+ */
+
+unsigned long int _pow(unsigned int base, unsigned int exponent)
+{
+        unsigned long int result = 1;
+        unsigned int i = 0;
+
+        for (i = 1; i <= exponent; i++)
+        {
+                result = result * base;
+        }
+        return (result);
+}
+
+/**
  * get_bit: a function  that returns the value of a bit at a given index
  * @n: the number 
  * @index: the index
