@@ -31,6 +31,8 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned long int bit = 0;
 	int test = 0;
 
+	if (index > (sizeof(unsigned long int) * 8 - 1))
+		return (-1);
 	bit = _pow(2, index);
 	test = n & bit;
 	if (test)
