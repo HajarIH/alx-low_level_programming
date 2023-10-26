@@ -18,8 +18,8 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	for (i = 0; i <= a; i++)
 	{
 		current = 1 << i;
-		if (current && num)
-			result ++;
+		if (current & num)
+			result++;
 	}
-	return (result);
+	return (result * 0.5);
 }
