@@ -10,9 +10,9 @@
 unsigned long int _pow(unsigned int base, unsigned int exponent)
 {
         unsigned long int result = 1;
-        int i = 0;
+        unsigned int i = 0;
 
-        for (i = 0; i <= exponent; i++)
+        for (i = 1; i <= exponent; i++)
         {
                 result = result * base;
         }
@@ -35,10 +35,11 @@ void print_binary(unsigned long int n)
 	while (div != 0)
 	{
 		test = n & div;
-		if (test == divisor)
+		if (test == div)
 		{
 			flag = 1;
 			_putchar('1');
+			printf("%d", 1);
 		}
 		else if (flag == 1 || div == 1)
 		{
