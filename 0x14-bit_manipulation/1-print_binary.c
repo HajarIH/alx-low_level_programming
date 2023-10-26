@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * pow: a function that calculate the power of a number
+ * _pow: a function that calculate the power of a number
  * @base: the base
  * @exponent: the exponent
  * Return: the power of a number
@@ -39,7 +39,6 @@ void print_binary(unsigned long int n)
 		{
 			flag = 1;
 			_putchar('1');
-			printf("%d", 1);
 		}
 		else if (flag == 1 || div == 1)
 		{
