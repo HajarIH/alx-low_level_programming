@@ -24,10 +24,10 @@ int exponential_search(int *array, size_t size, int value)
 		end = end * 2;
 	}
 	left = end / 2;
-	if (end >= size)	
+	if (end >= size)
 		right = size - 1;
 	else
-		right = end; 
+		right = end;
 	printf("Value found between indexes [%ld] and [%ld]\n", left, right);
 	while (left <= right)
 	{
