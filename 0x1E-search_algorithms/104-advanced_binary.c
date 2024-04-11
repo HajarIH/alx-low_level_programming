@@ -1,8 +1,8 @@
 #include "search_algos.h"
 
-int range_binary(int *array, int left, int right, int value)
+int range_binary(int *array, size_t left, size_t right, int value)
 {
-	int mid, i;
+	size_t mid, i;
 
 	if (left <= right)
 	{
@@ -16,7 +16,7 @@ int range_binary(int *array, int left, int right, int value)
 		if (array[mid] == value)
 		{
 			if (mid == left || array[mid - 1] != value)
-				return (mid);
+				return ((int)mid);
 			else
 				return (range_binary(array, left, mid, value));
 		}
