@@ -7,12 +7,12 @@ int range_binary(int *array, int left, int right, int value)
 	if (left <= right)
 	{
 		mid = left + (right - left) / 2;
-		
+
 		printf("Searching in array: ");
 		for (i = left; i < right; i++)
 			printf("%d, ", array[i]);
 		printf("%d\n", array[i]);
-		
+
 		if (array[mid] == value)
 		{
 			if (mid == left || array[mid - 1] != value)
