@@ -1,5 +1,15 @@
 #include "search_algos.h"
 
+/**
+ * range_binary- a function to search for a value using iterations
+ * @array: a pointer to the first element of the array to search in
+ * @left: the left of the range
+ * @right; the right of the range
+ * @value: the value to search for
+ *
+ * Return: the index where value is located or -1 otherwise
+ */
+
 int range_binary(int *array, size_t left, size_t right, int value)
 {
 	size_t mid, i;
@@ -23,7 +33,7 @@ int range_binary(int *array, size_t left, size_t right, int value)
 		else
 		{
 			if (array[mid] > value)
-				return (range_binary(array, left, mid - 1, value));
+				return (range_binary(array, left, mid, value));
 			else
 				return (range_binary(array, mid + 1, right, value));
 		}
