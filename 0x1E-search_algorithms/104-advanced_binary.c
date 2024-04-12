@@ -1,6 +1,7 @@
 #include "search_algos.h"
 
 /**
+ * range_binary-  a function that searches for
  * range_binary- a function to search for a value using iterations
  * @array: a pointer to the first element of the array to search in
  * @left: the left of the range
