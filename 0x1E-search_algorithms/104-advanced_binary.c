@@ -5,7 +5,7 @@
  * range_binary- a function to search for a value using iterations
  * @array: a pointer to the first element of the array to search in
  * @left: the left of the range
- * @right; the right of the range
+ * @right: the right of the range
  * @value: the value to search for
  *
  * Return: the index where value is located or -1 otherwise
